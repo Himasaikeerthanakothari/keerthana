@@ -1,0 +1,27 @@
+import java.util.*;
+class conversion
+{
+public static void main(String args[])
+{
+System.out.println("1.Decimal to Binary\n2.Decimal to Octal\n3.Decimal to Hexa");
+int n,choice;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter your choice");
+choice=sc.nextInt();
+System.out.print("enter a Decimal num:");
+n=sc.nextInt();
+switch(choice)
+{
+case 1:String a=Integer.toBinaryString(n);
+           System.out.println("Binary:"+a);
+break;
+case 2:String b=Integer.toOctalString(n);
+           System.out.println("Octal:"+b);
+break;
+case 3:String c=Integer.toHexString(n);
+           System.out.println("Hexa:"+c);
+break;
+default:System.out.println("enter correct choice");
+}
+}
+}
