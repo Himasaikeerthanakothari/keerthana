@@ -1,0 +1,25 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+ class ReadingScanner
+ {
+   public static void main(String args[])
+ {
+      Scanner s = new Scanner(System.in);
+      System.out.println("Enter n value");
+      int length = s.nextInt();
+      int [] myArray = new int[length];
+      System.out.println("Enter 5 values");
+
+      for(int i=0; i<length; i++ )
+ {
+         myArray[i] = s.nextInt();
+      }
+       System.out.println("Enter value in array,update value");
+        for(int j=0;j<2;j++)
+{
+       myArray[j] = s.nextInt();
+}  
+     System.out.println(Arrays.toString(myArray));
+   }
+} 
