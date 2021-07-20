@@ -1,0 +1,23 @@
+import java.util.*;
+class arraylist
+{
+public static void main(String args[])
+{
+ArrayList<Integer> x=new ArrayList<Integer>();
+x.add(30);
+x.add(40);
+x.add(15);
+x.add(20);
+x.add(25);
+x.add(7);
+x.add(99);
+System.out.println(x);
+Iterator<Integer> i=x.iterator();
+while(i.hasNext())
+{
+if(i.next()<=20)
+i.remove();
+}
+System.out.println(x);
+}
+}
