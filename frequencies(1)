@@ -1,0 +1,22 @@
+import java.util.*; 
+class frequencies
+{
+public static void main(String args[])
+{
+HashMap<String,Integer> a=new HashMap<String,Integer>();
+String[] s={"rama","gita","rama","lakshmi","rama","gita","lakshmi","sita","lakshmi"};
+for(int i=0;i<s.length;i++)
+{
+String key=s[i];
+if(a.containsKey(key))
+a.put(key,a.get(key)+1);
+else
+a.put(key,1);
+}
+for(Map.Entry<String,Integer> m:a.entrySet())
+{
+if(m.getValue()>2)
+System.out.println(m.getKey()+"="+m.getValue()); 
+}
+}
+}
